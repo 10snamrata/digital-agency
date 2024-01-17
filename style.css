@@ -1,0 +1,85 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.ad_faqcont{
+    height: 800px;
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 50px 85px 80px 85px;
+    box-sizing: border-box;
+    font-family: sans-serif , Arial, Helvetica;
+}
+.faq_heading{
+    color: #cdcdcd;
+    font-family: sans-serif;
+    line-height: 28px;
+    font-size: small;
+}
+.faq_heading  > h2 >span{
+    color: rgb(249, 95, 40);
+    margin-right: 30px;
+    font-size: 20px;
+    letter-spacing: -2px;
+}
+.ad_mainbox{
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    box-sizing: border-box;
+    gap: 130px;
+
+}
+.ad_lbox{
+    height: 350px;
+    width: 48%;
+    border: 1px solid blue;
+}
+.ad_lbox>h1{
+    color: white;
+    font-size:40px ;
+    font-weight: bold;
+    /* letter-spacing: 0.5px; */
+}
+.ad_lbox>p{
+    color: #8d8d8d;
+    font-size: large;
+    line-height: 32px;
+    font-weight: bold;
+}
+.ad_lbox>button{
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    font-size: large;
+}
+.ad_lbox>button:hover{
+    cursor: pointer;
+}
+
+.ad_lbox>button>a{
+    text-decoration: none;
+    color: black;
+}
+
+.ad_rbox{
+    height: auto;
+    width: 52%;
+    border: 1px solid blueviolet;
+}
+.ad_flex1, .ad_flex2, .ad_flex3{
+    display: flex;
+    gap: 35px;
+    color: rgb(221, 218, 218);
+}
+.ad_qn>h2{
+    font-size: x-large;
+}
+.ad_ans>p{
+    color: #8d8d8d;
+    font-size: large;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
