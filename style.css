@@ -25,7 +25,6 @@ body{
 .ad_mainbox{
     height: auto;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     box-sizing: border-box;
     gap: 130px;
@@ -34,7 +33,6 @@ body{
 .ad_lbox{
     height: 350px;
     width: 48%;
-    border: 1px solid blue;
 }
 .ad_lbox>h1{
     color: white;
@@ -63,11 +61,13 @@ body{
     text-decoration: none;
     color: black;
 }
+.ad_lbox>button:hover{
+    background-color: lightsalmon;
+}
 
 .ad_rbox{
     height: auto;
     width: 52%;
-    border: 1px solid blueviolet;
 }
 .ad_flex1, .ad_flex2, .ad_flex3{
     display: flex;
