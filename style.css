@@ -1,3 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Montserrat", sans-serif;
+    /* font-family: 'Baloo Bhai', cursive; */
+  }
+
+  header {
+    background-color:#fff;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logo {
+      margin-left: -500px;
+      padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  nav {
+      margin-right: 90px;
+    display: flex;
+  }
+
+  nav a {
+      font-weight: 900;
+    color: black;
+    text-decoration: none;
+    margin: 0 18px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+  }
+  img{
+  height: 60px;
+  margin:5px 6px 6px 84px;
+  padding: 5px;
+}
+/* @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column; 
+    }
+
+    .dropdown {
+      display: block; 
+    }
+
+    .dropdown-content {
+      position: static; 
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block; 
+    }
+  } */
+
+  hr{
+    /* margin-top: 100px; */
+    margin-left: 5%;
+    border:  .70px solid black;
+    width: 90%;
+  }
+
+
+
+
+
+
+
+
+/* =======namrta======== */
+
 body {
   margin: 0;
   padding: 0;
