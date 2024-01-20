@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        body{
+            padding: 0;
+            /* margin: 0; */
+            font-family: sans-serif;
+        }
+        .project-wrapper{
+            width: 100%;
+            height: auto;
+            border: 5px solid red;
+            padding: 50px 50px 50px 50px;
+            box-sizing: border-box;
+        }
+        .projects-card-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+        .project-card{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 2fr;
+            height: auto;
+            gap: 50px 50px;
+            row-gap: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover{
+            transform: scale(1.05);
+        }
+        .project-card > .card-img{
+            border: 2px solid blue;
+        }
+        .card-img > img{
+            max-width: 100%;
+        }
+        .project-card > .card-body{
+            border: 2px solid green;
+            box-sizing: border-box;
+            padding: 25px;
+        }
+        .card-body>.card-btn{
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+            display: block;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+
+    <!-- projects page -->
+
+     <!-- projects page HTML structure-->
+     <h1 style="text-align: center;">PROJECTS</h1>
+    <div class="project-wrapper" id="project-wrapper">
+
+        <!-- dynamic code comes here from js -->
+
+
+        <!-- <div class="projects-card-list"> -->
+
+            <!-- card-1 -->
+            <!-- <div class="project-card" data-id="1">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div> -->
+
+            <!-- card-2 -->
+            <!-- <div class="project-card" data-id="2">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div> -->
+
+            <!-- card-3 -->
+            <!-- <div class="project-card" data-id="3">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="projects-pagination-wrapper" id="projects-pagination-wrapper">
+
+        <!-- <div id="page-button-container"></div> -->
+    </div>
+    
+  
+      
+    <!-- footer -->
+
+
+
+
+    <script src="projects.js"></script>
+</body>
+</html>
