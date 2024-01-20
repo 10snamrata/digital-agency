@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family:"Montserrat", sans-serif;
-    /* font-family: 'Baloo Bhai', cursive; */
   }
 
   header {
@@ -69,7 +68,7 @@ body {
     background: #ccc;
     margin: 10px 0;
   }
-  img{
+  header>img{
   height: 60px;
   margin:5px 6px 6px 84px;
   padding: 5px;
@@ -94,7 +93,7 @@ body {
   } */
 
   hr{
-    /* margin-top: 100px; */
+    margin-top: 100px;
     margin-left: 5%;
     border:  .70px solid black;
     width: 90%;
@@ -172,7 +171,6 @@ h1 {
     rgba(40, 30, 113, 0.928),
     rgba(28, 113, 165, 0.059)
   );
-  /* color:black; */
   color: rgb(255, 149, 0);
   opacity: 0;
   transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
@@ -224,6 +222,10 @@ body{
   font-size: 20px;
   letter-spacing: -2px;
 }
+.faq_heading  > h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
 .ad_mainbox{
   height: auto;
   width: 100%;
@@ -240,13 +242,14 @@ body{
   color: white;
   font-size:40px ;
   font-weight: bold;
-  /* letter-spacing: 0.5px; */
+  margin-bottom: 30px;
 }
 .ad_lbox>p{
   color: #8d8d8d;
   font-size: large;
   line-height: 32px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .ad_lbox>button{
   margin-top: 20px;
@@ -254,17 +257,17 @@ body{
   width: 200px;
   font-weight: bold;
   font-size: large;
+  transition: transform 0.3s ease-in-out;
 }
 .ad_lbox>button:hover{
   cursor: pointer;
+  transform: scale(1.1);
+  background-color:rgb(255, 149, 0); ;
 }
 
 .ad_lbox>button>a{
   text-decoration: none;
   color: black;
-}
-.ad_lbox>button:hover{
-  background-color: lightsalmon;
 }
 
 .ad_rbox{
@@ -373,7 +376,7 @@ footer {
 
 .buttonchat:hover {
   transform: scale(1.1);
-  background-color:rgb(255, 149, 0); ;
+  background-color:rgb(255, 149, 0); 
 }
 hr {
   border: 1px solid #000;
@@ -410,20 +413,30 @@ footer .na_container li {
   margin-bottom: 20px;
 }
 
-a {
+.na_company a {
   text-decoration: none;
   color: rgb(114, 114, 110);
 }
-a:hover{
+.na_links a{
+  text-decoration: none;
+  color: rgb(114, 114, 110);
+}
+.na_followus a{
+  text-decoration: none;
+  color: rgb(114, 114, 110);
+}
+
+.na_resources a{
+  text-decoration: none;
+  color: rgb(114, 114, 110);
+}
+.na_container a:hover{
     color:rgb(255, 149, 0);
     
 }
 
 
 
-mark {
-  background-color: rgb(255, 201, 110);
-}
 
 .icon {
   display: inline-block;
