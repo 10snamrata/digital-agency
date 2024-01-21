@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="skeleton.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <section id="admin-menu">
+        <div class="logo">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNmlqlR-Je5KXsai4WGg1fsEnlmJUCVHnbgQhdgXoWElvKHAhL"
+                alt="">
+            <!-- <h2>sunshine</h2> -->
+        </div>
+
+        <div class="admin-items">
+            <li>
+                <i class="fa-solid fa-chart-pie"><a href="index.html">Dashboard</a></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-gears"><a href="service.html">Services</a></i>
+            </li>
+            <li class="active">
+                <i class="fa-solid fa-code"><a href="project.html">Projects</a></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-microblog"><a href="blog.html">Blogs</a></i>
+            </li>
+        </div>
+    </section>
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <h1 class="heading">Projects</h1>
+            </div>
+
+            <div class="profile">
+                <img src="https://www.shutterstock.com/image-vector/user-icon-trendy-flat-style-600nw-418179865.jpg" alt="profile_pic">
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="columns four sidebar-one" id="sidebar-one">
+                    <h4>Add New Projects</h4>
+                    <input type="text" id="project-id" class="u-full-width" placeholder="ID" />
+                    <input type="text" id="project-title" class="u-full-width" placeholder="Project Title" />
+                    <input type="text" id="project-description" class="u-full-width"
+                        placeholder="Project Description" />
+                    <input type="text" id="project-img" class="u-full-width" placeholder="Project Image" />
+                    <input type="text" id="project-tag" class="u-full-width" placeholder="tags" />
+                    <input type="text" id="project-status" class="u-full-width" placeholder="Project Status" />
+                    <input type="text" id="project-link" class="u-full-width" placeholder="Project Link" />
+                    <input type="text" id="project-client" class="u-full-width" placeholder="Client Name" />
+                    <button id="add-project" class="u-full-width button button-primary">
+                        Add Project
+                    </button>
+                    <hr />
+
+                    <h4>update all fields of Projects</h4>
+                    <input type="text" id="update-project-id" class="u-full-width" placeholder="ID" />
+                    <input type="text" id="update-project-title" class="u-full-width" placeholder="Project Title" />
+                    <input type="text" id="update-project-description" class="u-full-width"
+                        placeholder="Project Description" />
+                    <input type="text" id="update-project-img" class="u-full-width" placeholder="Project Image" />
+                    <input type="text" id="update-project-tag" class="u-full-width" placeholder="Project Tags" />
+                    <input type="text" id="update-project-status" class="u-full-width" placeholder="Project Status" />
+                    <input type="text" id="update-project-link" class="u-full-width" placeholder="Project Link" />
+                    <input type="text" id="update-project-client" class="u-full-width" placeholder="Client Name" />
+                    <button id="update-project" class="u-full-width button button-primary">
+                        Update all fields
+                    </button>
+                    <hr />
+
+                    <h4>Filter Based On Project Status</h4>
+                    <button id="filter-completed" class="u-full-width button button-primary">
+                        Completed
+                    </button>
+                    <button id="filter-pending" class="u-full-width button button-primary">
+                        Pending
+                    </button>
+                </div>
+
+
+                <div class="data-list-wrapper" id="data-list-wrapper">
+                    <!-- append card-list that includes card here -->
+                </div>
+                <div class="pagination-wrapper" id="pagination-wrapper">
+                    <!-- append the pagination button here -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="https://kit.fontawesome.com/4c69a665fd.js" crossorigin="anonymous"></script>
+<script src="Projectscript.js"></script>
+
+</html>

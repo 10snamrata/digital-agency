@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="admin-menu">
+        <div class="logo">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNmlqlR-Je5KXsai4WGg1fsEnlmJUCVHnbgQhdgXoWElvKHAhL"
+                alt="">
+            <!-- <h2>sunshine</h2> -->
+        </div>
+
+        <div class="admin-items">
+            <li>
+                <i class="fa-solid fa-chart-pie"><a href="index.html">Dashboard</a></i>
+            </li>
+            <li class="active">
+                <i class="fa-solid fa-gears"><a href="service.html" aria-current="page">Services</a></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-code"><a href="project.html">Projects</a></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-microblog"><a href="blog.html">Blogs</a></i>
+            </li>
+        </div>
+    </section>
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <h1 class="heading">Services</h1>
+            </div>
+
+            <div class="profile">
+                <img src="https://www.shutterstock.com/image-vector/user-icon-trendy-flat-style-600nw-418179865.jpg"
+                    alt="profile_pic">
+            </div>
+        </div>
+
+        <section class="form-container">
+            <div class="row">
+                <div class="columns four sidebar-one" id="sidebar-one">
+                    <h4>Add Services</h4>
+                    <input type="text" id="job-role" class="u-full-width" placeholder="Title" />
+                    <input type="text" id="job-image" class="u-full-width" placeholder="image" />
+                    <input type="text" id="job-employmentType" class="u-full-width" placeholder="Description" />
+                    <input type="text" id="job-packageCTC" class="u-full-width" placeholder="Price" />
+                    <button id="add-job" class="u-full-width button button-primary">
+                        Add Service
+                    </button>
+                    <hr />
+
+                    <h4>update all fields of Services</h4>
+                    <input type="text" id="update-job-id" class="u-full-width" placeholder="ID" />
+                    <input type="text" id="update-job-role" class="u-full-width" placeholder="Title" />
+                    <input type="text" id="update-job-image" class="u-full-width" placeholder="image" />
+                    <input type="text" id="update-job-employmentType" class="u-full-width" placeholder="Description" />
+                    <input type="text" id="update-job-packageCTC" class="u-full-width" placeholder="price" />
+                    <button id="update-job" class="u-full-width button button-primary">
+                        Update all fields
+                    </button>
+                    <hr />
+                </div>
+                <div class="data-list-wrapper" id="data-list-wrapper">
+                    <!-- append card-list that includes card here -->
+                </div>
+
+                <div class="pagination-wrapper" id="pagination-wrapper">
+                    <!-- append the pagination button here -->
+                </div>
+
+            </div>
+        </section>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/4c69a665fd.js" crossorigin="anonymous"></script>
+<script src="scriptServices.js"></script>
+
+</html>
