@@ -8,21 +8,19 @@
     <script src="https://kit.fontawesome.com/97e9bfad16.js"crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="icon" href="sun.jpg" type="s/x-icon">      
   </head>
   <body>
     
-      <header>
-        
-        
+      <!-- <header>
         <div id="logo">
           <h1>Sunshine Digital Agency</h1>
         </div>
         <nav id="navbarr">
-           
+           <div id="lapNav">
           <a href="index.html">Home</a>
           <a href="./service.html" target="_blank">Services</a>
           <a href="projects.html" target="_blank">Projects</a>
@@ -32,12 +30,62 @@
             <a href="#"><i class="ri-user-line"></i>LOGIN</a>
             <div class="dropdown-content">
               <a href="fake.html">Admin Login</a>
-              <!-- <a href="fake.html">User Login</a> -->
+            </div>
+          </div>
+        </div>
+          <i class="fa-solid fa-bars" id="menu-bar"></i>
+          <div id="nav-visible">
+            <a href="index.html">Home</a>
+            <a href="./service.html" target="_blank">Services</a>
+            <a href="projects.html" target="_blank">Projects</a>
+            <a href="fake.html">Team</a>
+            <a href="./blogs.html" target="_blank">Blogs</a>
+            <div class="dropdown">
+              <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+              <div class="dropdown-content">
+                <a href="fake.html">Admin Login</a>
+                </div>
             </div>
           </div>
         </nav>
       </header>
+          -->
 
+
+          <div class="navbar">
+            <div id="lapNav">
+              <img src="./assets/sunshine proj logo.jpg" style="width: 150px; height: 150px; margin-left: 15px; margin-right: 300px;" alt="">
+                <a href="index.html">Home</a>
+                <a href="./service.html" target="_blank">Services</a>
+                <a href="projects.html" target="_blank">Projects</a>
+                <a href="fake.html">Team</a>
+                <a href="./blogs.html" target="_blank">Blogs</a>
+                <div class="dropdown2">
+                    <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+                    <div class="dropdown-content" >
+                        <a href="fake.html" style="color: white;">Admin Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleDropdown()">
+                &#9776;
+            </div>
+            <div class="dropdown" id="dropdown">
+              <a href="index.html">Home</a>
+              <a href="./service.html" target="_blank">Services</a>
+              <a href="projects.html" target="_blank">Projects</a>
+              <a href="fake.html">Contact</a>
+              <a href="./blogs.html" target="_blank">Blogs</a>
+              <!-- <div class="dropdown2">
+                  <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+                  <div class="dropdown-content">
+                      <a href="fake.html">Admin Login</a>
+                  </div>
+              </div> -->
+            </div>
+        </div>
+
+      <!-- <a href="fake.html">User Login</a> -->
      <!-- <hr> -->
 
         <!-- ===========carousel demo============= -->
@@ -68,8 +116,8 @@
     <!-- namrta -->
     <!-- service section -->
     <section class="na_service">
-      <h1 class="na_service_heading" style="font-size: 50px;">
-        We offer a complete range of<br />
+      <h1 class="na_service_heading" style="margin-top: -100px;">
+        We offer a complete range of
         services for your business
       </h1>
 
@@ -249,45 +297,47 @@
             ></a>
           </div>
         </div>
-
-        <div class="na_company">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Career</a></li>
-          </ul>
+        <div class="footright">
+          <div class="na_company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">Our Work</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_followus">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="na_resources">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-          </ul>
-        </div>
-
-        <div class="na_links">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Corporate</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-        </div>
-
-        <div class="na_followus">
-          <h3>Follow Us</h3>
-          <ul>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
-          </ul>
-        </div>
+        
       </div>
     </footer>
 
