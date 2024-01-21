@@ -2,6 +2,11 @@ const baseServerURL = `https://mockapi-lrqd.onrender.com/blogs`;
 let mainSection=document.getElementById("blog-wrapper");
 let blogPaginationWrapper=document.getElementById("blog-pagination-wrapper");
 
+//serching 
+let searchBySelect = document.getElementById("search-by-select");
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
+
 
 //pagination
 function pagination(pages,limit){
@@ -78,3 +83,25 @@ function appendData(data){
     mainSection.append( blogCardList);
 }
 
+
+// search
+
+async function search() {
+  try {
+    let res;
+    if (searchBySelect.value === "title") {
+      res = await fetch(`${baseServerURL}?title=${searchByInput.value}`);
+    } else if(searchBySelect.value === "author") {
+      res = await fetch(`${baseServerURL}?author=${searchByInput.value}`);
+    }
+    else{
+      res = await fetch(`${baseServerURL}?date=${searchByInput.value}`);
+    }
+    let result = await res.json();
+    appendData(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+searchByButton.addEventListener("click", search);

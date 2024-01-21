@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <script src="https://kit.fontawesome.com/97e9bfad16.js"crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/97e9bfad16.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
 
     <style>
       .service-wrapper {
         margin-left: 85px;
       }
-    body > h1{
+      body > h1 {
         font-size: 60px;
         text-align: center;
       }
@@ -66,26 +69,62 @@
       .service-card-body > h3 {
         margin: 0;
       }
-      .service-pagination-wrapper{
+      .service-pagination-wrapper {
         margin-left: 480px;
         margin-bottom: 50px;
       }
-     .button{
+      .button {
         height: 50px;
         width: 100px;
-        background-color:black;
+        background-color: black;
         color: #fff;
         border: none;
-        border-radius: 5px; 
+        border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         margin-left: 15px;
-     }
-    .button:hover {
-        background-color: rgb(255,149,0); /* Change background color on hover */
-    }
+      }
+      .button:hover {
+        background-color: rgb(
+          255,
+          149,
+          0
+        ); /* Change background color on hover */
+      }
 
-  
+      .search-service-wrapper {
+        margin-left: 300px;
+        margin-bottom: 50px;
+      }
+      .search-service-wrapper > select {
+        height: 60px;
+        width: 185px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #33c3f0;
+      }
+      .search-service-wrapper > input {
+        height: 55px;
+        width: 380px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 30px;
+        border: 2px solid #33c3f0;
+      }
+      .search-service-wrapper > button {
+        height: 60px;
+        width: 185px;
+        margin-left: 30px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -93,22 +132,29 @@
 
     <div class="navbar">
       <div id="lapNav">
-        <img src="./assets/sunshine proj logo.jpg" style="width: 150px; height: 150px; margin-left: 15px; margin-right: 300px;" alt="">
-          <a href="index.html">Home</a>
-          <a href="./service.html" target="_blank">Services</a>
-          <a href="projects.html" target="_blank">Projects</a>
-          <a href="fake.html">Team</a>
-          <a href="./blogs.html" target="_blank">Blogs</a>
-          <div class="dropdown2">
-              <a href="#"><i class="ri-user-line"></i>LOGIN</a>
-              <div class="dropdown-content" >
-                  <a href="fake.html" style="color: white;">Admin Login</a>
-              </div>
+        <img
+          src="./assets/sunshine proj logo.jpg"
+          style="
+            width: 150px;
+            height: 150px;
+            margin-left: 15px;
+            margin-right: 300px;
+          "
+          alt=""
+        />
+        <a href="index.html">Home</a>
+        <a href="./service.html" target="_blank">Services</a>
+        <a href="./projects.html" target="_blank">Projects</a>
+        <a href="./contact.html" target="_blank">Conatct</a>
+        <a href="./blogs.html" target="_blank">Blogs</a>
+        <div class="dropdown2">
+          <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+          <div class="dropdown-content">
+            <a href="./admin/index.html" style="color: white">Admin Login</a>
           </div>
+        </div>
       </div>
-      <div class="hamburger-icon" onclick="toggleDropdown()">
-          &#9776;
-      </div>
+      <div class="hamburger-icon" onclick="toggleDropdown()">&#9776;</div>
       <div class="dropdown" id="dropdown">
         <a href="index.html">Home</a>
         <a href="./service.html" target="_blank">Services</a>
@@ -122,10 +168,25 @@
             </div>
         </div> -->
       </div>
-  </div>
+    </div>
 
     <!-- service page -->
     <h1>Our Services</h1>
+    <!-- Search by title -->
+    <div class="search-service-wrapper" id="search-service-wrapper">
+      <select id="search-by-select">
+        <option value="">Search By</option>
+        <option value="title">title</option>
+        <!-- <option value="artist"></option> -->
+      </select>
+      <input type="text" id="search-by-input" placeholder="Enter title here" />
+      <button
+        id="search-by-button"
+        style="background-color: #33c3f0; color: white; border: none"
+      >
+        Search
+      </button>
+    </div>
     <div class="service-wrapper" id="service-wrapper">
       <div class="service-card-list">
         <!-- 1st card -->
@@ -209,14 +270,13 @@
     </div>
     <!-- pagination -->
     <div class="service-pagination-wrapper" id="service-pagination-wrapper">
-
       <div id="card-button-container"></div>
     </div>
 
     <!-- footer -->
 
     <footer>
-      <div class="footer-heading " style="margin-bottom:-100px;">
+      <div class="footer-heading">
         <h1>Let's work something together</h1>
         <button class="buttonchat">Let's Chat →</button>
       </div>
@@ -300,14 +360,19 @@
         <div class="na_followus">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-
 
     <script src="service.js"></script>
   </body>

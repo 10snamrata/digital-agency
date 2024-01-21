@@ -1,124 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunshine Digital Agency</title>
-    <link rel="stylesheet" href="style.css" >
-    <script src="https://kit.fontawesome.com/97e9bfad16.js"crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/97e9bfad16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="icon" href="sun.jpg" type="s/x-icon">      
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="sun.jpg" type="s/x-icon" />
   </head>
   <body>
-    
-      <!-- <header>
-        <div id="logo">
-          <h1>Sunshine Digital Agency</h1>
-        </div>
-        <nav id="navbarr">
-           <div id="lapNav">
-          <a href="index.html">Home</a>
-          <a href="./service.html" target="_blank">Services</a>
-          <a href="projects.html" target="_blank">Projects</a>
-          <a href="fake.html">Team</a>
-          <a href="./blogs.html" target="_blank">Blogs</a>
-          <div class="dropdown">
-            <a href="#"><i class="ri-user-line"></i>LOGIN</a>
-            <div class="dropdown-content">
-              <a href="fake.html">Admin Login</a>
-            </div>
+    <div class="navbar">
+      <div id="lapNav">
+        <img
+          id="sunlogo"
+          src="./assets/sunshine proj logo.jpg"
+          style="
+            width: 150px;
+            height: 150px;
+            margin-left: 15px;
+            margin-right: 300px;
+          "
+          alt=""
+        />
+        <a href="index.html">Home</a>
+        <a href="./service.html" target="_blank">Services</a>
+        <a href="./projects.html" target="_blank">Projects</a>
+        <a href="./contact.html" target="_blank">Contact</a>
+        <a href="./blogs.html" target="_blank">Blogs</a>
+        <div class="dropdown2">
+          <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+          <div class="dropdown-content">
+            <a href="./admin/index.html" style="color: white">Admin Login</a>
           </div>
         </div>
-          <i class="fa-solid fa-bars" id="menu-bar"></i>
-          <div id="nav-visible">
-            <a href="index.html">Home</a>
-            <a href="./service.html" target="_blank">Services</a>
-            <a href="projects.html" target="_blank">Projects</a>
-            <a href="fake.html">Team</a>
-            <a href="./blogs.html" target="_blank">Blogs</a>
-            <div class="dropdown">
-              <a href="#"><i class="ri-user-line"></i>LOGIN</a>
-              <div class="dropdown-content">
-                <a href="fake.html">Admin Login</a>
-                </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-          -->
-
-
-          <div class="navbar">
-            <div id="lapNav">
-              <img src="./assets/sunshine proj logo.jpg" style="width: 150px; height: 150px; margin-left: 15px; margin-right: 300px;" alt="">
-                <a href="index.html">Home</a>
-                <a href="./service.html" target="_blank">Services</a>
-                <a href="projects.html" target="_blank">Projects</a>
-                <a href="fake.html">Team</a>
-                <a href="./blogs.html" target="_blank">Blogs</a>
-                <div class="dropdown2">
-                    <a href="#"><i class="ri-user-line"></i>LOGIN</a>
-                    <div class="dropdown-content" >
-                        <a href="fake.html" style="color: white;">Admin Login</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hamburger-icon" onclick="toggleDropdown()">
-                &#9776;
-            </div>
-            <div class="dropdown" id="dropdown">
-              <a href="index.html">Home</a>
-              <a href="./service.html" target="_blank">Services</a>
-              <a href="projects.html" target="_blank">Projects</a>
-              <a href="fake.html">Contact</a>
-              <a href="./blogs.html" target="_blank">Blogs</a>
-              <!-- <div class="dropdown2">
+      </div>
+      <div class="hamburger-icon" onclick="toggleDropdown()">&#9776;</div>
+      <div class="dropdown" id="dropdown">
+        <a href="index.html">Home</a>
+        <a href="./service.html" target="_blank">Services</a>
+        <a href="projects.html" target="_blank">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./blogs.html" target="_blank">Blogs</a>
+        <!-- <div class="dropdown2">
                   <a href="#"><i class="ri-user-line"></i>LOGIN</a>
                   <div class="dropdown-content">
                       <a href="fake.html">Admin Login</a>
                   </div>
               </div> -->
-            </div>
-        </div>
-
-      <!-- <a href="fake.html">User Login</a> -->
-     <!-- <hr> -->
-
-        <!-- ===========carousel demo============= -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner" style="height: 600px;">
-      <div class="carousel-item active">
-        <img src="./assets/c1.jpg"  style="height: 500px;" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item ">
-        <img src="./assets/c2.jpg" style="height: 500px;"  class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/c3.jpg" style="height: 500px;" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-    
-    
-    
-    <!-- namrta -->
+
+    <!-- <a href="fake.html">User Login</a> -->
+    <!-- <hr> -->
+
+    <!-- ===========carousel demo============= -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner" style="height: 600px">
+        <div class="carousel-item active">
+          <img
+            src="./assets/c1.jpg"
+            style="height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/c2.jpg"
+            style="height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/c3.jpg"
+            style="height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- namrata -->
     <!-- service section -->
     <section class="na_service">
-      <h1 class="na_service_heading" style="margin-top: -100px;">
-        We offer a complete range of
-        services for your business
+      <h1 class="na_service_heading" style="margin-top: -100px">
+        We offer a complete range of services for your business
       </h1>
 
       <div class="na_service_card">
@@ -185,65 +199,82 @@
     <!-- faq section -->
     <section class="ad_faqcont">
       <div class="faq_heading">
-          <h2><span>&mdash;&mdash;&mdash;</span>Frequently Asked Questions</h2>
+        <h2><span>&mdash;&mdash;&mdash;</span>Frequently Asked Questions</h2>
       </div>
 
       <div class="ad_mainbox">
-          <div class="ad_lbox">
-              <h1>Our Solutions make your lifes better</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae nulla dignissimos animi ex provident aliquam incidunt modi explicabo architecto?</p>
-              <button><a href="#">Contact Us</a><i style="margin-left: 17px;" class="fa-solid fa-arrow-right"></i></button>
-          </div>
-  
-          <div class="ad_rbox">
-              <div class="ad_flex1">
-                  <div class="ad_lnums">
-                      <h2>Q1</h2>
-                  </div>
-                  <div class="ad_rqna">
-                      <div class="ad_qn">
-                          <h2>Do you offer flexible payment terms?</h2>
-                      </div>
-                      <div class="ad_ans">
-                          <p>Yes, we understand that every business has unique financial needs. Our goal is to make our services accessible to a wide range of clients. We offer flexible payment terms like one-time payment, monthly installments, or a customized plan.</p>
-                      </div>
-                  </div>
-              </div>
-              <hr style="border: 1px solid #c5c3c3; margin-bottom: 30px;">
+        <div class="ad_lbox">
+          <h1>Our Solutions make your lifes better</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            beatae nulla dignissimos animi ex provident aliquam incidunt modi
+            explicabo architecto?
+          </p>
+          <button>
+            <a href="#">Contact Us</a
+            ><i style="margin-left: 17px" class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
 
-              <div class="ad_flex2">
-                  <div class="ad_lnums">
-                      <h2>Q2</h2>
-                  </div>
-                  <div class="ad_rqna">
-                      <div class="ad_qn">
-                          <h2>What do you need to make estimate?</h2>
-                      </div>
-                      <div class="ad_ans">
-                          <p>We would like to have information about Project Overview(goals and objectives), Target Audience, Timeline, Creative Assets, Tracking and Analytics, Communication Preferences.</p>
-                      </div>
-                  </div>
+        <div class="ad_rbox">
+          <div class="ad_flex1">
+            <div class="ad_lnums">
+              <h2>Q1</h2>
+            </div>
+            <div class="ad_rqna">
+              <div class="ad_qn">
+                <h2>Do you offer flexible payment terms?</h2>
               </div>
-              <hr style="border: 1px solid #c5c3c3; margin-bottom: 30px;">
-
-              <div class="ad_flex3">
-                  <div class="ad_lnums">
-                      <h2>Q3</h2>
-                  </div>
-                  <div class="ad_rqna">
-                      <div class="ad_qn">
-                          <h2>What field do you specialize in?</h2>
-                      </div>
-                      <div class="ad_ans">
-                          <p>We are specialized in fields like E-Commerce, Technology, Healthcare, Hospitality and Travel, Finance.</p>
-                      </div>
-                  </div>
+              <div class="ad_ans">
+                <p>
+                  Yes, we understand that every business has unique financial
+                  needs. Our goal is to make our services accessible to a wide
+                  range of clients. We offer flexible payment terms like
+                  one-time payment, monthly installments, or a customized plan.
+                </p>
               </div>
+            </div>
           </div>
+          <hr style="border: 1px solid #c5c3c3; margin-bottom: 30px" />
+
+          <div class="ad_flex2">
+            <div class="ad_lnums">
+              <h2>Q2</h2>
+            </div>
+            <div class="ad_rqna">
+              <div class="ad_qn">
+                <h2>What do you need to make estimate?</h2>
+              </div>
+              <div class="ad_ans">
+                <p>
+                  We would like to have information about Project Overview(goals
+                  and objectives), Target Audience, Timeline, Creative Assets,
+                  Tracking and Analytics, Communication Preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr style="border: 1px solid #c5c3c3; margin-bottom: 30px" />
+
+          <div class="ad_flex3">
+            <div class="ad_lnums">
+              <h2>Q3</h2>
+            </div>
+            <div class="ad_rqna">
+              <div class="ad_qn">
+                <h2>What field do you specialize in?</h2>
+              </div>
+              <div class="ad_ans">
+                <p>
+                  We are specialized in fields like E-Commerce, Technology,
+                  Healthcare, Hospitality and Travel, Finance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-  </section>
-
+    </section>
 
     <!-- footer section -->
     <footer>
@@ -307,7 +338,7 @@
               <li><a href="#">Career</a></li>
             </ul>
           </div>
-  
+
           <div class="na_resources">
             <h3>Resources</h3>
             <ul>
@@ -316,7 +347,7 @@
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-  
+
           <div class="na_links">
             <h3>Links</h3>
             <ul>
@@ -327,21 +358,27 @@
               <li><a href="#">News</a></li>
             </ul>
           </div>
-  
+
           <div class="na_followus">
             <h3>Follow Us</h3>
             <ul>
-              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-              <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-              <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+              </li>
             </ul>
           </div>
         </div>
-        
       </div>
     </footer>
 
     <script src="index.js"></script>
-    
   </body>
 </html>

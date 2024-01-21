@@ -3,22 +3,10 @@ const baseServerURL = "https://mockapi-lrqd.onrender.com/projects";
 let mainSection = document.getElementById("project-wrapper");
 let projectPaginationWrapper = document.getElementById("projects-pagination-wrapper");
 
-
-// pagination
-// function pagination(pages,limit){
-   
-//     projectPaginationWrapper.innerHTML="";
-//     for (let i = 1; i <= pages; i++) {
-//         let btn = document.createElement("button");
-//         btn.classList.add("button", "button-primary");
-//         btn.innerText = i;
-//         btn.addEventListener("click", () => {
-//           fetchData(`${baseServerURL}?_page=${i}&_limit=${limit}`);
-//         });
-//         projectPaginationWrapper.append(btn);
-//         console.log("hii");
-//       }
-// }
+//serching 
+let searchBySelect = document.getElementById("search-by-select");
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
 
 
 // fetch data from api
@@ -114,3 +102,26 @@ function createCard(ele)
     card.append(cardImg, cardBody);
     return card;
 }
+
+
+// search
+
+async function search() {
+    try {
+      let res;
+      if (searchBySelect.value === "title") {
+        res = await fetch(`${baseServerURL}?title=${searchByInput.value}`);
+      } else if(searchBySelect.value === "tags") {
+        res = await fetch(`${baseServerURL}?tags=${searchByInput.value}`);
+      }
+      else{
+        res = await fetch(`${baseServerURL}?status=${searchByInput.value}`);
+      }
+      let result = await res.json();
+      appendData(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+  searchByButton.addEventListener("click", search);
