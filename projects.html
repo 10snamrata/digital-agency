@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            /* margin: 0; */
+            font-family: sans-serif ,  Arial, Helvetica;
+        }
+        .project-wrapper{
+            width: 100%;
+            height: auto;
+            padding: 50px 50px 50px 50px;
+            box-sizing: border-box;
+        }
+        .projects-card-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+        .project-card{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 2fr;
+            height: auto;
+            gap: 50px 50px;
+            row-gap: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover{
+            transform: scale(1.05);
+        }
+        .project-card > .card-img{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .card-img > img{
+            max-width: 100%;
+            border-radius: 5px;
+            height: 330px;
+        }
+        .project-card > .card-body{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-sizing: border-box;
+            padding: 25px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .card-body>.card-btn{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+            display: block;
+        }
+        .card-body>.card-btn:hover{
+            background-color: rgb(255,149,0); 
+        }
+        .projects-pagination-wrapper{
+        margin-left: 400px;
+        margin-bottom: 50px;
+        
+      }
+     .button{
+        height: 50px;
+        width: 100px;
+        background-color:black;
+        color: #fff;
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 15px;
+        margin-top: 50px;
+     }
+    .button:hover {
+        background-color: rgb(255,149,0); /* Change background color on hover */
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header style="font-family: sans-serif ,  Arial, Helvetica;">
+        
+        <!-- <img src="./assets/sun.jpg" alt="">
+        <div id="logo">
+            Sunshine Digital Agency</div> -->
+            <div id="logo">
+                <h1>Sunshine Digital Agency</h1>
+              </div>
+        <nav id="navbarr">
+           
+          <a href="index.html">Home</a>
+          <a href="./service.html" target="_blank">Services</a>
+          <a href="./projects.html" target="_blank">Projects</a>
+          <a href="fake.html" target="_blank">Team</a>
+          <a href="./blogs.html" target="_blank">Blogs</a>
+          <div class="dropdown">
+            <a href="#"><i class="ri-user-line"></i>LOGIN</a>
+            <div class="dropdown-content">
+              <a href="fake.html">Admin Login</a>
+              <!-- <a href="fake.html">User Login</a> -->
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- projects page -->
+
+     <!-- projects page HTML structure-->
+     <h1 style="text-align: center; font-size: 60px;">PROJECTS</h1>
+    <div class="project-wrapper" id="project-wrapper">
+
+        <!-- dynamic code comes here from js -->
+
+
+        <!-- <div class="projects-card-list"> -->
+
+            <!-- card-1 -->
+            <!-- <div class="project-card" data-id="1">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div> -->
+
+            <!-- card-2 -->
+            <!-- <div class="project-card" data-id="2">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div> -->
+
+            <!-- card-3 -->
+            <!-- <div class="project-card" data-id="3">
+                <div class="card-img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <p class="tags"></p>
+                    <p class="status"></p>
+                    <p class="project-link"></p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="projects-pagination-wrapper" id="projects-pagination-wrapper">
+
+        <!-- <div id="page-button-container"></div> -->
+    </div>
+    
+  
+      
+    <!-- footer -->
+    <footer>
+        <div class="footer-heading" style="margin-bottom:-100px;">
+          <h1>Let's work something together</h1>
+          <button class="buttonchat">Let's Chat →</button>
+        </div>
+        <hr />
+        <div class="na_container">
+          <div class="about-sunshine">
+            <h3 style="font-size: 20px">Sunshine</h3>
+            <p style="font-size: 15px; color: rgb(114, 114, 110)">
+              Creative Agency
+            </p>
+            <p>
+              Sunshine is digital agency hat help you make<br />
+              better experience iaculis cras in.
+            </p>
+  
+            <div class="icon">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://web.telegram.org/"
+                target="_blank"
+                class="footer-icon"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com/"
+                target="_blank"
+                class="footer-icon"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="footer-icon"
+              >
+                <i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </div>
+          </div>
+  
+          <div class="na_company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">Our Work</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+  
+          <div class="na_followus">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+    <script src="projects.js"></script>
+</body>
+</html>
