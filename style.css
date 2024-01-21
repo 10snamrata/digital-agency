@@ -15,22 +15,24 @@ body {
     align-items: center;
     /* position: sticky; */
     top: 0px;
-     /* border-bottom: 4px solid rgb(218, 218, 129); */
   }
-  header>img{
-    height: 60px;
-    margin: -30px 0px 0px 100px;
-    /* padding: 15px; */
-  }
+  
   #logo {
-    margin-top: 60px;
-      margin-left: -700px;
-      padding: 10px;
-  text-shadow: 2px 2px 2px rgb(245, 245, 102);
-      font-size: 1.5em;
+    height: auto;
+    width: 500px;
+    background-image: url(./assets/sunlogo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 2px rgb(245, 245, 102);
+    font-size: 1.5em;
     font-weight: bold;
     font-family: 'Baloo Bhai', cursive;
 
+  }
+
+  #logo > h1{
+    width: 500px;
   }
 
   nav {
@@ -396,7 +398,9 @@ footer {
 footer > hr {
   border: 1px solid #000;
   width: 100%;
+  margin-left: 0px;
 }
+
 
 footer .na_container {
   width: 100%;
